@@ -23,7 +23,7 @@ live demo:
 
 ## Install
 
-1. Download MapTableMaker to a web accessible directory
+1. [Download MapTableMaker](https://github.com/Packet-Clearing-House/MapTableMaker/archive/1.0.zip) to a web accessible directory
 1. Uncompress the downloaded file
 1. Browser to URL
 1. Enter CSV values and submit form
