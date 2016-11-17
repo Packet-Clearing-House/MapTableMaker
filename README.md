@@ -4,6 +4,15 @@
 
 Easily make and download high resolution SVG maps from your CSV dataset
 
+MapTableMaker is a simple PHP web application which 
+allows you to easily create high resolution SVG maps from CSV.
+MapTableMaker is open source (MIT) and
+uses <a href="https://github.com/Packet-Clearing-House/maptable">MapTable</a>, also open source (MIT)
+to generate it's maps.
+
+
+[![](./data/screenshot.png)](https://plip.com/MapTableMaker)
+
 ## Requirements
 
 A web server running PHP

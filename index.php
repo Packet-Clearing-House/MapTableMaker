@@ -33,7 +33,8 @@
 
 <p>Enter CSV with one country per line.  Countries must be two letters.
     Invalid countries will be ignored.
-    Countries can be in any order and can have positive or negative integer values.</p>
+    Countries can be in any order and can have positive or negative integer values.
+    Contries with values are left empty.</p>
 
 <p>Here's an example of 5 countries with positive and negative values:
 <pre>
