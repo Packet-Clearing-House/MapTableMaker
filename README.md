@@ -10,7 +10,9 @@ uses <a href="https://github.com/Packet-Clearing-House/maptable">MapTable</a>, a
 to generate it's maps.
 
 * Here is a screen shot of the web application.  Click it to go to a 
-live demo: [![](./data/screenshot.png)](https://plip.com/MapTableMaker)
+live demo:
+  
+  [![](./data/screenshot.png)](https://plip.com/MapTableMaker)
 
 ## Requirements
 
