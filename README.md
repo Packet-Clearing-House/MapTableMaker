@@ -36,4 +36,5 @@ MIT
 
 ## Releases
 
-* 1.0 - 11/16/2016 Initial Release
+* 1.0.1 - 11/16/2016 Fix [#1](https://github.com/Packet-Clearing-House/MapTableMaker/pull/2)
+* 1.0.0 - 11/16/2016 Initial Release
