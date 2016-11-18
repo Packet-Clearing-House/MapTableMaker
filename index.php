@@ -160,10 +160,10 @@ if (!empty($_POST['csv'])){
                                 '"https://github.com/Packet-Clearing-House/MapTableMaker"' +
                                 ' target="_blank">' +
                                 '<tspan font-weight="bold">MapTableMaker</tspan></a> ' +
-                                '<a xlink:href=' +
+                                'Copyright <a xlink:href=' +
                                 '"https://pch.net"' +
                                 ' target="_blank">' +
-                                '&copy;PCH</a>';
+                                'PCH</a>';
                         }
                     },
                 })
