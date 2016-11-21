@@ -2,7 +2,7 @@
 
 ## About
 
-MapTableMaker is a PHP web application which allows you to  host your 
+MapTableMaker is a single page PHP web application which allows you to  host your 
 own MapTableMaker server. This server can
  easily make and let's you download high resolution SVG maps from your CSV dataset.
 MapTableMaker is open source (MIT) and
@@ -12,7 +12,7 @@ to generate it's maps.
 * Here is a screen shot of the web application.  Click it to go to a 
 live demo:
   
-  [![](./data/screenshot2.png)](https://plip.com/MapTableMaker)
+  [![](./data/screenshot.png)](https://plip.com/MapTableMaker)
 
 ## Requirements
 
@@ -21,14 +21,51 @@ live demo:
 * A CSV data set with two letter country codes and integers
 * A need for high resolution, print ready maps ;)
 
-## Install
+## 2 Minute Install
 
 1. [Download MapTableMaker](https://github.com/Packet-Clearing-House/MapTableMaker/archive/1.0.zip) to a web accessible directory
 1. Uncompress the downloaded file
-1. Browser to URL
-1. Enter CSV values and submit form
-1. Download map
-1. Enjoy!
+1. Browse to URL & Enter CSV values 
+1. Download map!
+
+## Custom Install
+
+MapTableMaker.php is class that has all static methods. The thinking is that
+you can use the 2 Minute Install to get up and running with no customizations.
+However, if you want to integrate it with an existing app which may have it's
+own templating, then you'll want to be able to output the MapTableMaker
+in different bits and peices.
+
+The MapTableMaker classhas 4 classes used to render the 1 page app 
+and 2 functions used to handle echoing CSV and saving the SVG.  
+
+If you want to customize
+how the app is deployed, you can use the following 4 to show the prerequisite
+JavaScript includes, form instructions and form:
+
+```php
+MapTableMaker::getIncludes();
+MapTableMaker::getIntroText();
+MapTableMaker::getInstructionsAndForm();
+MapTableMaker::getHtmlPlaceholder();
+```
+
+To include the javascritp after the includes and form, call:
+
+```html
+<script src='./js/MapTableMaker.js'></script>
+```
+
+Finally these two are used to handle requests to echo back CSV as a URL
+for MapTable library to include and to save as an SVG.  The ``outtputSVG()``
+lookind for the ``$_POST['data']`` to be passed and ``outputCSV()`` looks
+for ``_GET['csv']`` to be passed.  Both exit if they see they're expected
+variables passed and are not empty:
+
+```php
+MapTableMaker::outtputSVG();
+MapTableMaker::outputCSV;
+```
 
 ## License
 
@@ -36,5 +73,15 @@ MIT
 
 ## Releases
 
-* 1.0.1 - 11/16/2016 Fix [#1](https://github.com/Packet-Clearing-House/MapTableMaker/pull/2)
-* 1.0.0 - 11/16/2016 Initial Release
+* 1.1 - 11/20/2016 
+    * Port from HTML using POST to PHP using AJAX
+    * Create static class with all logic
+    * Merge 3 PHP files into 1
+    * Add option for 3 letter and full country names as well as 2 letter
+    * Add option for title
+    * Add option to show legend
+    * Add option for 110 meter vs 50 meter resolution
+* 1.0.1 - 11/16/2016 
+    * Fix [#1](https://github.com/Packet-Clearing-House/MapTableMaker/pull/2)
+* 1.0.0 - 11/16/2016 
+    * Initial Release
