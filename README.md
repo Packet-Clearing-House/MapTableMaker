@@ -18,7 +18,10 @@ live demo:
 
 * A web server running PHP
 * A modern browser capable of running [d3.js](https://d3js.org/)
-* A CSV data set with two letter country codes and integers
+* A CSV data set with integers and countries in
+2 char ([iso_a2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)), 
+3 char ([iso_a3:](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)) 
+or full name per GeoJSON.
 * A need for high resolution, print ready maps ;)
 
 ## 2 Minute Install
@@ -36,11 +39,11 @@ However, if you want to integrate it with an existing app which may have it's
 own templating, then you'll want to be able to output the MapTableMaker
 in different bits and peices.
 
-The MapTableMaker classhas 4 classes used to render the 1 page app 
+The MapTableMaker class has 4 classes used to render the 1 page app 
 and 2 functions used to handle echoing CSV and saving the SVG.  
 
 If you want to customize
-how the app is deployed, you can use the following 4 to show the prerequisite
+how the app is deployed, you can use the following 4 methods to show the prerequisite
 JavaScript includes, form instructions and form:
 
 ```php
@@ -58,8 +61,8 @@ To include the javascritp after the includes and form, call:
 
 Finally these two are used to handle requests to echo back CSV as a URL
 for MapTable library to include and to save as an SVG.  The ``outtputSVG()``
-lookind for the ``$_POST['data']`` to be passed and ``outputCSV()`` looks
-for ``_GET['csv']`` to be passed.  Both exit if they see they're expected
+looking for the ``$_POST['data']`` to be passed and ``outputCSV()`` looks
+for ``$_GET['csv']`` to be passed.  Both exit if they see their expected
 variables passed and are not empty:
 
 ```php
