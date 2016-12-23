@@ -1,7 +1,6 @@
 <?php
 require_once ('./MapTableMaker.php');
 MapTableMaker::outputCSV();
-MapTableMaker::outtputSVG();
 ?>
 <!DOCTYPE html>
 <html lang="en">

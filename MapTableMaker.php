@@ -1,15 +1,10 @@
 <?php
 
+/**
+ * Class MapTableMaker
+ * Simple static class to ease integration with other web apps
+ */
 class MapTableMaker{
-
-    public static function outtputSVG(){
-        if(!empty($_POST['data'])) {
-            header("Content-type: image/svg+xml");
-            header('Content-Disposition: attachment; filename="MapTableMaker.'.date("m.d.y").'-'.rand(10000,99999).'.svg"');
-            echo $_POST['data'];
-            exit();
-        }
-    }
 
     public static function outputCSV(){
         /**
@@ -36,6 +31,7 @@ class MapTableMaker{
             <script src='./js/topojson.js'></script>
             <script src='./js/maptable.min.js'></script>
             <script src='./js/maptable.percentile.helper.js'></script>
+            <script src='./js/FileSaver.min.js'></script>
             ";
     }
 
@@ -46,38 +42,22 @@ class MapTableMaker{
                 See <a href='https://github.com/Packet-Clearing-House/MapTableMaker'>MapTableMaker website</a>
                 for more information. MapTableMaker is open source (MIT) and
                 uses <a href='https://github.com/Packet-Clearing-House/maptable'>MapTable</a>,
-                also open source (MIT) to generate it's maps.
+                also open source (MIT) to generate its maps.
             </p>
             <p>
-                Follow the two steps below to generate your map!
+                Enter CSV with one country per line.  Countries must be in the valid
+                 format; invalid countries
+                will be ignored. Countries can be in any order.  
+                 Values can be positive or negative. 
+                Click <a href='' class='exampleLink'>here</a> to see an example 
+                (or <a href='' class='resetLink'>here</a> to reset the form).
+                
             </p>";
     }
 
     public static function getInstructionsAndForm(){
         return "<h2>Step 1 - Enter CSV</h2>
-            <p>
-                Enter CSV with one country per line.  Countries must be in the valid
-                 format and invalid countries
-                will be ignored. Countries can be in any order and can 
-                have positive or negative
-                integer values. Contries with values are left empty.
-            </p>
-            <p>
-                Here's an example of 5 countries with positive and negative values:
-                <pre>
-MX,50
-IR,22
-CA,-22
-BR,-51
-US,45
-                </pre>
-            </p>
-            
-            <p>
-                Optionally, you can enter a URL for a logo to use to 
-                watermark the map in the lower left.
-            </p>
-            
+
             <form action='./' method='post'  id='mapform'>
             
                 <p>
@@ -90,7 +70,7 @@ US,45
                 <input type='radio' name='countryFormat' value='name' />
                 </p>   
                 
-                Country CSV:<br/>
+                CSV (country,value):<br/>
                 <textarea name='csv' rows='5' id='csv'></textarea>
             
                 <p>

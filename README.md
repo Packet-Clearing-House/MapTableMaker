@@ -59,14 +59,11 @@ To include the javascritp after the includes and form, call:
 <script src='./js/MapTableMaker.js'></script>
 ```
 
-Finally these two are used to handle requests to echo back CSV as a URL
-for MapTable library to include and to save as an SVG.  The ``outtputSVG()``
-looking for the ``$_POST['data']`` to be passed and ``outputCSV()`` looks
-for ``$_GET['csv']`` to be passed.  Both exit if they see their expected
-variables passed and are not empty:
+Finally there's a function to echo back CSV as a URL
+for MapTable library to include. This exits if it sees 
+it's expected variable passed and is not empty:
 
 ```php
-MapTableMaker::outtputSVG();
 MapTableMaker::outputCSV;
 ```
 
@@ -76,7 +73,12 @@ MIT
 
 ## Releases
 
-* 1.1 - 11/20/2016 
+* 1.1.1- 12/22/2016 
+    * Update to MapTable 1.4.0
+    * Add more complex example
+    * Simplify readme
+    * Remove SVG export via POST, use client side instead
+* 1.1.0 - 11/20/2016 
     * Port from HTML using POST to PHP using AJAX
     * Create static class with all logic
     * Merge 3 PHP files into 1

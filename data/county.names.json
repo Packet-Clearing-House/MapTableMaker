@@ -1,0 +1,346 @@
+{"AF","Afghanistan"}
+{"AO","Angola"}
+{"AL","Albania"}
+{"AE","United Arab Emirates"}
+{"AR","Argentina"}
+{"AM","Armenia"}
+{"TF","Fr. S. Antarctic Lands"}
+{"AU","Australia"}
+{"AT","Austria"}
+{"AZ","Azerbaijan"}
+{"BI","Burundi"}
+{"BE","Belgium"}
+{"BJ","Benin"}
+{"BF","Burkina Faso"}
+{"BD","Bangladesh"}
+{"BG","Bulgaria"}
+{"BS","Bahamas"}
+{"BA","Bosnia and Herz."}
+{"BY","Belarus"}
+{"BZ","Belize"}
+{"BO","Bolivia"}
+{"BR","Brazil"}
+{"BN","Brunei"}
+{"BT","Bhutan"}
+{"BW","Botswana"}
+{"CF","Central African Rep."}
+{"CA","Canada"}
+{"CH","Switzerland"}
+{"CL","Chile"}
+{"CN","China"}
+{"CI","Cote D'Ivoire"}
+{"CM","Cameroon"}
+{"CD","Congo-Kinshasa"}
+{"CG","Congo-Brazzaville"}
+{"CO","Colombia"}
+{"CR","Costa Rica"}
+{"CU","Cuba"}
+{"CY","Cyprus"}
+{"CZ","Czech Republic"}
+{"DE","Germany"}
+{"DJ","Djibouti"}
+{"DK","Denmark"}
+{"DO","Dominican Republic"}
+{"DZ","Algeria"}
+{"EC","Ecuador"}
+{"EG","Egypt"}
+{"ER","Eritrea"}
+{"ES","Spain"}
+{"EE","Estonia"}
+{"ET","Ethiopia"}
+{"FI","Finland"}
+{"FJ","Fiji"}
+{"FK","Falkland Is."}
+{"FR","France"}
+{"GA","Gabon"}
+{"GB","United Kingdom"}
+{"GE","Georgia"}
+{"GH","Ghana"}
+{"GN","Guinea"}
+{"GM","Gambia"}
+{"GW","Guinea-Bissau"}
+{"GQ","Eq. Guinea"}
+{"GR","Greece"}
+{"GL","Greenland"}
+{"GT","Guatemala"}
+{"GY","Guyana"}
+{"HN","Honduras"}
+{"HR","Croatia"}
+{"HT","Haiti"}
+{"HU","Hungary"}
+{"ID","Indonesia"}
+{"IN","India"}
+{"IE","Ireland"}
+{"IR","Iran"}
+{"IQ","Iraq"}
+{"IS","Iceland"}
+{"IL","Israel"}
+{"IT","Italy"}
+{"JM","Jamaica"}
+{"JO","Jordan"}
+{"JP","Japan"}
+{"KZ","Kazakhstan"}
+{"KE","Kenya"}
+{"KG","Kyrgyzstan"}
+{"KH","Cambodia"}
+{"KR","Korea"}
+{"KW","Kuwait"}
+{"LA","Lao PDR"}
+{"LB","Lebanon"}
+{"LR","Liberia"}
+{"LY","Libya"}
+{"LK","Sri Lanka"}
+{"LS","Lesotho"}
+{"LT","Lithuania"}
+{"LU","Luxembourg"}
+{"LV","Latvia"}
+{"MA","Morocco"}
+{"MD","Moldova"}
+{"MG","Madagascar"}
+{"MX","Mexico"}
+{"MK","Macedonia"}
+{"ML","Mali"}
+{"MM","Myanmar"}
+{"ME","Montenegro"}
+{"MN","Mongolia"}
+{"MZ","Mozambique"}
+{"MR","Mauritania"}
+{"MW","Malawi"}
+{"MY","Malaysia"}
+{"NA","Namibia"}
+{"NC","New Caledonia"}
+{"NE","Niger"}
+{"NG","Nigeria"}
+{"NI","Nicaragua"}
+{"NL","Netherlands"}
+{"NO","Norway"}
+{"NP","Nepal"}
+{"NZ","New Zealand"}
+{"OM","Oman"}
+{"PK","Pakistan"}
+{"PA","Panama"}
+{"PE","Peru"}
+{"PH","Philippines"}
+{"PG","Papua New Guinea"}
+{"PL","Poland"}
+{"PR","Puerto Rico"}
+{"KP","Dem. Rep. Korea"}
+{"PT","Portugal"}
+{"PY","Paraguay"}
+{"PS","Palestine"}
+{"QA","Qatar"}
+{"RO","Romania"}
+{"RU","Russia"}
+{"RW","Rwanda"}
+{"EH","W. Sahara"}
+{"SA","Saudi Arabia"}
+{"SD","Sudan"}
+{"SS","S. Sudan"}
+{"SN","Senegal"}
+{"SB","Solomon Is."}
+{"SL","Sierra Leone"}
+{"SV","El Salvador"}
+{"SO","Somalia"}
+{"RS","Serbia"}
+{"SR","Suriname"}
+{"SK","Slovakia"}
+{"SI","Slovenia"}
+{"SE","Sweden"}
+{"SZ","Swaziland"}
+{"SY","Syria"}
+{"TD","Chad"}
+{"TG","Togo"}
+{"TH","Thailand"}
+{"TJ","Tajikistan"}
+{"TM","Turkmenistan"}
+{"TL","Timor-Leste"}
+{"TT","Trinidad and Tobago"}
+{"TN","Tunisia"}
+{"TR","Turkey"}
+{"TW","Taiwan"}
+{"TZ","Tanzania"}
+{"UG","Uganda"}
+{"UA","Ukraine"}
+{"UY","Uruguay"}
+{"US","United States"}
+{"UZ","Uzbekistan"}
+{"VE","Venezuela"}
+{"VN","Viet Nam"}
+{"VU","Vanuatu"}
+{"YE","Yemen"}
+{"ZA","South Africa"}
+{"ZM","Zambia"}
+{"ZW","Zimbabwe"}
+{"AF","Afghanistan"}
+{"AO","Angola"}
+{"AL","Albania"}
+{"AE","United Arab Emirates"}
+{"AR","Argentina"}
+{"AM","Armenia"}
+{"TF","Fr. S. Antarctic Lands"}
+{"AU","Australia"}
+{"AT","Austria"}
+{"AZ","Azerbaijan"}
+{"BI","Burundi"}
+{"BE","Belgium"}
+{"BJ","Benin"}
+{"BF","Burkina Faso"}
+{"BD","Bangladesh"}
+{"BG","Bulgaria"}
+{"BS","Bahamas"}
+{"BA","Bosnia and Herz."}
+{"BY","Belarus"}
+{"BZ","Belize"}
+{"BO","Bolivia"}
+{"BR","Brazil"}
+{"BN","Brunei"}
+{"BT","Bhutan"}
+{"BW","Botswana"}
+{"CF","Central African Rep."}
+{"CA","Canada"}
+{"CH","Switzerland"}
+{"CL","Chile"}
+{"CN","China"}
+{"CI","Cote D'Ivoire"}
+{"CM","Cameroon"}
+{"CD","Congo-Kinshasa"}
+{"CG","Congo-Brazzaville"}
+{"CO","Colombia"}
+{"CR","Costa Rica"}
+{"CU","Cuba"}
+{"CY","Cyprus"}
+{"CZ","Czech Republic"}
+{"DE","Germany"}
+{"DJ","Djibouti"}
+{"DK","Denmark"}
+{"DO","Dominican Republic"}
+{"DZ","Algeria"}
+{"EC","Ecuador"}
+{"EG","Egypt"}
+{"ER","Eritrea"}
+{"ES","Spain"}
+{"EE","Estonia"}
+{"ET","Ethiopia"}
+{"FI","Finland"}
+{"FJ","Fiji"}
+{"FK","Falkland Is."}
+{"FR","France"}
+{"GA","Gabon"}
+{"GB","United Kingdom"}
+{"GE","Georgia"}
+{"GH","Ghana"}
+{"GN","Guinea"}
+{"GM","Gambia"}
+{"GW","Guinea-Bissau"}
+{"GQ","Eq. Guinea"}
+{"GR","Greece"}
+{"GL","Greenland"}
+{"GT","Guatemala"}
+{"GY","Guyana"}
+{"HN","Honduras"}
+{"HR","Croatia"}
+{"HT","Haiti"}
+{"HU","Hungary"}
+{"ID","Indonesia"}
+{"IN","India"}
+{"IE","Ireland"}
+{"IR","Iran"}
+{"IQ","Iraq"}
+{"IS","Iceland"}
+{"IL","Israel"}
+{"IT","Italy"}
+{"JM","Jamaica"}
+{"JO","Jordan"}
+{"JP","Japan"}
+{"KZ","Kazakhstan"}
+{"KE","Kenya"}
+{"KG","Kyrgyzstan"}
+{"KH","Cambodia"}
+{"KR","Korea"}
+{"KW","Kuwait"}
+{"LA","Lao PDR"}
+{"LB","Lebanon"}
+{"LR","Liberia"}
+{"LY","Libya"}
+{"LK","Sri Lanka"}
+{"LS","Lesotho"}
+{"LT","Lithuania"}
+{"LU","Luxembourg"}
+{"LV","Latvia"}
+{"MA","Morocco"}
+{"MD","Moldova"}
+{"MG","Madagascar"}
+{"MX","Mexico"}
+{"MK","Macedonia"}
+{"ML","Mali"}
+{"MM","Myanmar"}
+{"ME","Montenegro"}
+{"MN","Mongolia"}
+{"MZ","Mozambique"}
+{"MR","Mauritania"}
+{"MW","Malawi"}
+{"MY","Malaysia"}
+{"NA","Namibia"}
+{"NC","New Caledonia"}
+{"NE","Niger"}
+{"NG","Nigeria"}
+{"NI","Nicaragua"}
+{"NL","Netherlands"}
+{"NO","Norway"}
+{"NP","Nepal"}
+{"NZ","New Zealand"}
+{"OM","Oman"}
+{"PK","Pakistan"}
+{"PA","Panama"}
+{"PE","Peru"}
+{"PH","Philippines"}
+{"PG","Papua New Guinea"}
+{"PL","Poland"}
+{"PR","Puerto Rico"}
+{"KP","Dem. Rep. Korea"}
+{"PT","Portugal"}
+{"PY","Paraguay"}
+{"PS","Palestine"}
+{"QA","Qatar"}
+{"RO","Romania"}
+{"RU","Russia"}
+{"RW","Rwanda"}
+{"EH","W. Sahara"}
+{"SA","Saudi Arabia"}
+{"SD","Sudan"}
+{"SS","S. Sudan"}
+{"SN","Senegal"}
+{"SB","Solomon Is."}
+{"SL","Sierra Leone"}
+{"SV","El Salvador"}
+{"SO","Somalia"}
+{"RS","Serbia"}
+{"SR","Suriname"}
+{"SK","Slovakia"}
+{"SI","Slovenia"}
+{"SE","Sweden"}
+{"SZ","Swaziland"}
+{"SY","Syria"}
+{"TD","Chad"}
+{"TG","Togo"}
+{"TH","Thailand"}
+{"TJ","Tajikistan"}
+{"TM","Turkmenistan"}
+{"TL","Timor-Leste"}
+{"TT","Trinidad and Tobago"}
+{"TN","Tunisia"}
+{"TR","Turkey"}
+{"TW","Taiwan"}
+{"TZ","Tanzania"}
+{"UG","Uganda"}
+{"UA","Ukraine"}
+{"UY","Uruguay"}
+{"US","United States"}
+{"UZ","Uzbekistan"}
+{"VE","Venezuela"}
+{"VN","Viet Nam"}
+{"VU","Vanuatu"}
+{"YE","Yemen"}
+{"ZA","South Africa"}
+{"ZM","Zambia"}
+{"ZW","Zimbabwe"}
