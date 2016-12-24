@@ -1,6 +1,17 @@
 
 // initial load of page, draw empty map @ 110m for a placeholder
 drawMap('./index.php', '', true, '110', '', 'iso_a2', false);
+$('#country-selector').selectToAutocomplete();
+
+// capture manually adding a country
+$( "#addvalue" ).click(function() {
+    var csv = $('#country-selector').val() + "," + $('#manualvalue').val();
+    $('#csv').val(csv + "\n" + $('#csv').val());
+    $('#country-selector').val('');
+    $('#manualvalue').val('');
+    return false;
+});
+
 
 // fire example map
 $( ".exampleLink" ).click(function() {
