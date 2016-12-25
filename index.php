@@ -11,6 +11,7 @@ MapTableMaker::outputCSV();
     <title>MapTableMaker</title>
 
     <?php echo MapTableMaker::getIncludes() ?>
+
 </head>
 <body>
 

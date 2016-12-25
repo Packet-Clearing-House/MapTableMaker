@@ -73,7 +73,13 @@ MIT
 
 ## Releases
 
-* 1.1.1- 12/22/2016 
+* 1.2.0 - 12/24/2016
+    * Merry Christmas!
+    * Fix bug in JS on resetting form
+    * Default demo map to lo-res/110m
+    * Stub out support for lat/long markers
+    * Add option to manually add a country to CSV
+* 1.1.1 - 12/22/2016 
     * Update to MapTable 1.4.0
     * Add more complex example
     * Simplify readme
