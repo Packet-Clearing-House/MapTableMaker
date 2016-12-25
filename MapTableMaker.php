@@ -18,7 +18,7 @@ class MapTableMaker{
             header("Content-Disposition: attachment; filename=MapTableMaker.csv");
             header("Expires: 0");
             header("Pragma: public");
-            print "country,value\n";
+            print "country,value,latitude,longitude\n";
             print htmlspecialchars(urldecode($_GET['csv']), ENT_QUOTES, 'UTF-8');
             exit();
         }
@@ -77,9 +77,11 @@ class MapTableMaker{
                 
                 <p>
                 CSV (country,value):<br/>
-                <textarea name='csv' rows='5' id='csv'></textarea><br />
-            
-                Manual entry:<br/>
+                <textarea name='csv' rows='5' cols='40' id='csv'></textarea><br />
+                </p>
+                
+                <p>
+                Add single country and value (forces \"name\" country format):<br/>
                 " . $countryDropDown . "
                 Value: 
                 <input type='text' id='manualvalue' size='5' />

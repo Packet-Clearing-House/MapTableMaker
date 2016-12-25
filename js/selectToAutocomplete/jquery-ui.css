@@ -164,3 +164,14 @@
 	background-color: #D5E5F4;
 	color: #161A1C;
 }
+
+
+.mt-map-tooltip {
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.9);
+    color: #222;
+    max-width:450px;
+    min-width:375px;
+    position: absolute;
+    border: 1px solid;
+}
