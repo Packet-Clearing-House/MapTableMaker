@@ -83,7 +83,7 @@ function drawMap(csvUrl, logoUrl, showLegend, resolution, title, countryFormat, 
             countryIdentifierKey: 'country',
             countryIdentifierType: countryFormat,
             path: resolutionUrl,
-            exportSvgClient: true,
+            exportSvgClient: 'true',
             markers: {
                 groupBy: function(a) {
                     return a.latitude + ", " + a.longitude;
