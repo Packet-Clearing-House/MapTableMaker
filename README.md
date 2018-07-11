@@ -73,6 +73,8 @@ MIT
 
 ## Releases
 
+* 1.2.1 - 7/11/2018
+    * Update to latest maptable per #6
 * 1.2.0 - 12/24/2016
     * Merry Christmas!
     * Fix bug in JS on resetting form
