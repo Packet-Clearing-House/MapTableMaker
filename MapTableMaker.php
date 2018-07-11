@@ -29,9 +29,9 @@ class MapTableMaker{
             <script src='./js/jquery.js'></script>
             <script src='./js/d3.js'></script>
             <script src='./js/topojson.js'></script>
+            <script src='./js/FileSaver.min.js'></script>
             <script src='./js/maptable.min.js'></script>
             <script src='./js/maptable.percentile.helper.js'></script>
-            <script src='./js/FileSaver.min.js'></script>
             <script src='./js/selectToAutocomplete/jquery-ui.min.js'></script>
             <script src='./js/selectToAutocomplete/jquery.select-to-autocomplete.js'></script>
             <LINK REL='STYLESHEET' HREF='./js/selectToAutocomplete/jquery-ui.css' TYPE='text/css' TITLE='global css'>
