@@ -73,6 +73,8 @@ MIT
 
 ## Releases
 
+* 1.2.3 - 8/20/2018
+    * Allow path to be passed for country html per [#10](https://github.com/Packet-Clearing-House/MapTableMaker/issues/10)
 * 1.2.2 - 8/20/2018
     * Update to latest maptable 1.6.0, update JSON, update eaxmples [#8](https://github.com/Packet-Clearing-House/MapTableMaker/issues/8)
 * 1.2.1 - 7/11/2018
