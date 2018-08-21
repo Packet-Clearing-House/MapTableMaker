@@ -73,6 +73,8 @@ MIT
 
 ## Releases
 
+* 1.2.4 - 8/20/2018
+    * Don't hardcode index.php in js [#12](https://github.com/Packet-Clearing-House/MapTableMaker/issues/12)
 * 1.2.3 - 8/20/2018
     * Allow path to be passed for country html per [#10](https://github.com/Packet-Clearing-House/MapTableMaker/issues/10)
 * 1.2.2 - 8/20/2018
