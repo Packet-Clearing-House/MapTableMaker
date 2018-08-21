@@ -58,8 +58,22 @@ class MapTableMaker{
             </p>";
     }
 
-    public static function getInstructionsAndForm(){
-        $countryDropDown = file_get_contents(dirname(__FILE__) ."/data/county.names.dropdown.html");
+    public static function getInstructionsAndForm($pathToDropDownHTML = NULL){
+        $htmlName = "county.names.dropdown.html";
+        if($pathToDropDownHTML === NULL){
+            $pathToDropDownHTML = dirname(__FILE__) ."/data/" . $htmlName;
+        } else {
+            $pathToDropDownHTML = $pathToDropDownHTML . $htmlName;
+        }
+
+        if (!is_file($pathToDropDownHTML)){
+            $countryDropDown = "<div style='background-color: red'><h2>WARNINIG</h2>" .
+                "<p>Path to $htmlName not found!</p> <p><pre>{$pathToDropDownHTML}</pre></p>" .
+                "<style>#manualvalue, #addvalue {display:none}</style></div>";
+        } else {
+            $countryDropDown = file_get_contents($pathToDropDownHTML);
+        }
+
         return "<h2>Step 1 - Enter CSV</h2>
 
             <form action='./' method='post'  id='mapform'>
