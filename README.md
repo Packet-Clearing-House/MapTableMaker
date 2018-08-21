@@ -73,8 +73,10 @@ MIT
 
 ## Releases
 
+* 1.2.2 - 8/20/2018
+    * Update to latest maptable 1.6.0, update JSON, update eaxmples [#8](https://github.com/Packet-Clearing-House/MapTableMaker/issues/8)
 * 1.2.1 - 7/11/2018
-    * Update to latest maptable per #6
+    * Update to latest maptable per [#6](https://github.com/Packet-Clearing-House/MapTableMaker/issues/6)
 * 1.2.0 - 12/24/2016
     * Merry Christmas!
     * Fix bug in JS on resetting form
