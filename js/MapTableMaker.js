@@ -1,6 +1,6 @@
 
 // initial load of page, draw empty map @ 110m for a placeholder
-drawMap('./index.php', '', true, '110', '', 'iso_a2', false);
+drawMap('./', '', true, '110', '', 'iso_a2', false);
 $('#country-selector').selectToAutocomplete();
 
 // capture manually adding a country
@@ -31,7 +31,7 @@ $( ".resetLink" ).click(function() {
     $( "#title" ).val('');
     $('input:radio[name=countryFormat]')[0].checked = true;
     $('input:radio[name=resolution]')[0].checked = true;
-    drawMap('./index.php', '', true, '110', '', 'iso_a2', false);
+    drawMap('./', '', true, '110', '', 'iso_a2', false);
     return false;
 });
 
@@ -54,7 +54,7 @@ $("#mapform").on("submit", function() {
     }
     // draw map w/ form values
     drawMap(
-        './index.php?csv=' + encodeURI($('#csv').val()),
+        './?csv=' + encodeURI($('#csv').val()),
         $('#logo').val(),
         showLegend,
         $('input:radio[name=resolution]:checked').val(),
