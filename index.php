@@ -19,7 +19,8 @@ MapTableMaker::outputCSV();
 <?php echo MapTableMaker::getInstructionsAndForm(); ?>
 <?php echo MapTableMaker::getHtmlPlaceholder() ?>
 
-<script src='./js/MapTableMaker.js?v1.2.1'></script>
+<script src='./js/MapTableMaker.js?v1.3.0'></script>
+<script>maptablemakerLoaded()</script>
 
 </body>
 </html>
