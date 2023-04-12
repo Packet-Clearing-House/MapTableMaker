@@ -34,8 +34,12 @@ or full name per GeoJSON.
 ## Using CLI
 
 1. This has been tested on NodeJS 18 and npm 9
-1. Install dependencies `npm install`
-1. Generate your map following this documentation:
+1. Install dependencies. Just run `npm install`
+1. Generate your map, example:
+
+```sh
+npx maptablemaker generate ./example.csv --name example --showLegend true --title "My example" --countryFormat iso_a2 --usePercentile true
+```
 
 ```
 npx maptablemaker generate [csvUrl]

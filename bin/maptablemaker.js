@@ -110,22 +110,24 @@ function buildInputHtml(argv) {
                         empty: "#f9f9f9",
                         transform: function(val, rawValues) {
                             if (usePercentile) {
-                                val = parseInt(val);
-                                if (ranks == null && rawValues != undefined) {
-                                    var negativeOnly = false;
-                                    ranks = generateRanksFromSingleValue(rawValues, countKey, negativeOnly);
-                                }
-                                if (negativeRanks == null && rawValues != undefined) {
-                                    var negativeOnly = true;
-                                    negativeRanks = generateRanksFromSingleValue(rawValues, countKey, negativeOnly);
-                                }
-                                if (val < 0) {
-                                    useNegatives = true;
-                                    var toReturn = getPercentile(val, negativeRanks, useNegatives);
-                                } else {
-                                    useNegatives = false;
-                                    var toReturn = getPercentile(val, ranks, useNegatives);
-                                }
+                              var val = parseInt(val);
+                              var ranks = null;
+
+                              if (!ranks && rawValues) {
+                                  negativeOnly = false;
+                                  ranks = generateRanksFromSingleValue(rawValues, countKey, negativeOnly);
+                              }
+                              if (!negativeRanks && rawValues) {
+                                  negativeOnly = true;
+                                  negativeRanks = generateRanksFromSingleValue(rawValues, countKey, negativeOnly);
+                              }
+                              if (val < 0) {
+                                  useNegatives = true;
+                                  toReturn = getPercentile(val, negativeRanks, useNegatives);
+                              } else {
+                                  useNegatives = false;
+                                  toReturn = getPercentile(val, ranks, useNegatives);
+                              }
 
                                 return toReturn;
                             } else {
@@ -196,7 +198,7 @@ async function main(argv) {
 
     // Clean
     await browser.close();
-    fs.rmSync(inputHtmlPath);
+    // fs.rmSync(inputHtmlPath);
   } catch (e) {
     throw new Error(e.message);
   }
