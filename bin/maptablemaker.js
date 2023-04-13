@@ -189,6 +189,7 @@ async function main(argv) {
 
     const content = await page.content();
     const $ = cheerio.load(content);
+    $('#mt-map').find('div').remove();
     fs.writeFileSync(outputSvgPath, $('#mt-map').html());
     console.log(` Saved SVG file to: file://${outputSvgPath}`);
 
