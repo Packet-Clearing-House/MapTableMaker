@@ -24,7 +24,7 @@ function buildInputHtml(argv) {
       csvLine = `.csv('${argv.csvUrl}')`;
     } else {
       const csvData = fs.readFileSync(path.resolve(argv.csvUrl)).toString();
-      csvLine = `.csvData('${csvData.replace(/'/g, '\\\'').replace(/\n/g, '\\n')}')`;
+      csvLine = `.csvData('${csvData.replace(/'/g, '\\\'').replace(/\n/g, '\\n').replace(/\r/g, '\\r')}')`;
     }
   }
 
@@ -45,7 +45,7 @@ function buildInputHtml(argv) {
   <body>
     <div id="vizContainer"></div>
     <script>
-      const mapData = '${mapData.replace(/'/g, '\\\'').replace(/\n/g, '\\n')}';
+      const mapData = '${mapData.replace(/'/g, '\\\'').replace(/\n/g, '\\n').replace(/\r/g, '\\r')}';
       var ranks = null;
       var negativeRanks = null;
       var countKey = 'value';
