@@ -11,8 +11,8 @@ function buildInputHtml(argv) {
   if (!argv.csvUrl && !argv.csvData) throw new Error('Missing csvUrl or csvData');
 
   const resolutionPaths = {
-    50: `${path.resolve('./data/countries.topo.50m.json')}`,
-    110: `${path.resolve('./data/countries.topo.110m.json')}`,
+    50: `${path.resolve(`${__dirname}/../`, './data/countries.topo.50m.json')}`,
+    110: `${path.resolve(`${__dirname}/../`, './data/countries.topo.110m.json')}`,
   };
   const mapData = fs.readFileSync(resolutionPaths[argv.resolution]).toString();
 
@@ -35,12 +35,12 @@ function buildInputHtml(argv) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MapTableMaker</title>
-    <script src='file://${path.resolve('./js/jquery.js')}'></script>
-    <script src='file://${path.resolve('./js/d3.js')}'></script>
-    <script src='file://${path.resolve('./js/topojson.js')}'></script>
-    <script src='file://${path.resolve('./js/FileSaver.min.js')}'></script>
-    <script src='file://${path.resolve('./js/maptable.min.js')}'></script>
-    <script src='file://${path.resolve('./js/maptable.percentile.helper.js')}'></script>
+    <script src='file://${path.resolve(`${__dirname}/../`, './js/jquery.js')}'></script>
+    <script src='file://${path.resolve(`${__dirname}/../`, './js/d3.js')}'></script>
+    <script src='file://${path.resolve(`${__dirname}/../`, './js/topojson.js')}'></script>
+    <script src='file://${path.resolve(`${__dirname}/../`, './js/FileSaver.min.js')}'></script>
+    <script src='file://${path.resolve(`${__dirname}/../`, './js/maptable.min.js')}'></script>
+    <script src='file://${path.resolve(`${__dirname}/../`, './js/maptable.percentile.helper.js')}'></script>
   </head>
   <body>
     <div id="vizContainer"></div>
@@ -172,7 +172,7 @@ function buildInputHtml(argv) {
 async function main(argv) {
   try {
     const inputHtmlBody = buildInputHtml(argv);
-    const inputHtmlPath = path.resolve(`./tmp/${argv.name}.html`);
+    const inputHtmlPath = path.resolve(`${__dirname}/../`, `./tmp/${argv.name}.html`);
     fs.writeFileSync(inputHtmlPath, inputHtmlBody);
     const outputSvgPath = path.resolve(`${path.resolve(argv.outputDir)}/${argv.name}.svg`);
     const outputPngPath = path.resolve(`${path.resolve(argv.outputDir)}/${argv.name}.png`);
@@ -223,7 +223,7 @@ require('yargs')
 
     yargs.positional('outputDir', {
       type: 'string',
-      default: path.resolve('./output'),
+      default: path.resolve(`${__dirname}/../`, './output'),
       description: 'Absolute path of the folder',
     });
 
