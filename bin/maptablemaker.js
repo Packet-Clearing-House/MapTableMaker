@@ -43,6 +43,7 @@ function buildInputHtml(argv) {
     <script src='file://${path.resolve(`${__dirname}/../`, './js/maptable.percentile.helper.js')}'></script>
   </head>
   <body>
+    <style>#mt-map-title { font-size: ${argv.titleSize}; }</style>
     <div id="vizContainer"></div>
     <script>
       const mapData = '${mapData.replace(/'/g, '\\\'').replace(/\n/g, '\\n').replace(/\r/g, '\\r')}';
@@ -262,6 +263,12 @@ require('yargs')
       default: 50,
       description: 'Map Resolution/Download Size',
       choices: [50, 110],
+    });
+
+    yargs.positional('titleSize', {
+      type: 'string',
+      default: '11px',
+      description: 'Title font size',
     });
 
     yargs.positional('width', {

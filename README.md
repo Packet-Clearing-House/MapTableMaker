@@ -51,15 +51,16 @@ Positionals:
   csvData        CSV data                                               [string]
   outputDir      Absolute path of the folder                  [string] [default:
                "/absolute/path/MapTableMaker/output"]
-  name           Filename of the image   [string] [default: "random-string"]
+  name           Filename of the image  [string] [default: "random-number"]
   showLegend     Show Legend                          [boolean] [default: false]
   title          Title (optional - shown in lower left below logo)
                                                         [string] [default: null]
   logoUrl        SVG Logo URL/absolute path (optional - shows as a watermark in
                  the lower left)                        [string] [default: null]
-  usePercentile  Use Percentile Color Spread           [boolean] [default: true]
+  usePercentile  Use Percentile Color Spread          [boolean] [default: false]
   resolution     Map Resolution/Download Size
                                        [number] [choices: 50, 110] [default: 50]
+  titleSize      Title font size                      [string] [default: "11px"]
   width          Map width                              [number] [default: 1600]
   height         Map height                              [number] [default: 900]
   countryFormat  Country CSV Format (ISO)
@@ -68,7 +69,6 @@ Positionals:
 Options:
   --version  Show version number                                       [boolean]
   --help     Show help                                                 [boolean]
-
 ```
 
 ## Custom Install
