@@ -38,32 +38,36 @@ or full name per GeoJSON.
 1. Generate your map, example:
 
 ```sh
-npx maptablemaker generate ./example.csv --name example --showLegend true --title "My example" --countryFormat iso_a2 --usePercentile true
+npx maptablemaker generate ./example.csv --name example --showLegend true --title "My example" --countryFormat iso_a2 --usePercentile true --enableTimezones true --enableNight true --isoTime "2021-04-23T16:03:04Z"
 ```
 
-```
+```text
 npx maptablemaker generate [csvUrl]
 
 Generate a map from a CSV
 
 Positionals:
-  csvUrl         Absolute path or remote URL of the CSV file            [string]
-  csvData        CSV data                                               [string]
-  outputDir      Absolute path of the folder                  [string] [default:
-               "/absolute/path/MapTableMaker/output"]
-  name           Filename of the image  [string] [default: "random-number"]
-  showLegend     Show Legend                          [boolean] [default: false]
-  title          Title (optional - shown in lower left below logo)
+  csvUrl           Absolute path or remote URL of the CSV file          [string]
+  csvData          CSV data                                             [string]
+  outputDir        Absolute path of the folder                [string] [default:
+               "/path/to/output"]
+  name             Filename of the image        [string] [default: "random-str"]
+  showLegend       Show Legend                        [boolean] [default: false]
+  title            Title (optional - shown in lower left below logo)
                                                         [string] [default: null]
-  logoUrl        SVG Logo URL/absolute path (optional - shows as a watermark in
-                 the lower left)                        [string] [default: null]
-  usePercentile  Use Percentile Color Spread          [boolean] [default: false]
-  resolution     Map Resolution/Download Size
+  logoUrl          SVG Logo URL/absolute path (optional - shows as a watermark
+                   in the lower left)                   [string] [default: null]
+  usePercentile    Use Percentile Color Spread        [boolean] [default: false]
+  resolution       Map Resolution/Download Size
                                        [number] [choices: 50, 110] [default: 50]
-  titleSize      Title font size                      [string] [default: "11px"]
-  width          Map width                              [number] [default: 1600]
-  height         Map height                              [number] [default: 900]
-  countryFormat  Country CSV Format (ISO)
+  titleSize        Title font size                    [string] [default: "11px"]
+  isoTime          ISO datetime that will be used for the timezone stripes and
+                   night layers                         [string] [default: null]
+  enableTimezones  Enable timezones stripes           [boolean] [default: false]
+  enableNight      Enable night layer                 [boolean] [default: false]
+  width            Map width                            [number] [default: 1600]
+  height           Map height                            [number] [default: 900]
+  countryFormat    Country CSV Format (ISO)
                       [string] [choices: "iso_a2", "iso_a3"] [default: "iso_a2"]
 
 Options:

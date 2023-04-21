@@ -28,6 +28,8 @@ function buildInputHtml(argv) {
     }
   }
 
+  const timezonesData = fs.readFileSync(path.resolve(`${__dirname}/../`, './data/timezones.json')).toString();
+
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -41,12 +43,14 @@ function buildInputHtml(argv) {
     <script src='file://${path.resolve(`${__dirname}/../`, './js/FileSaver.min.js')}'></script>
     <script src='file://${path.resolve(`${__dirname}/../`, './js/maptable.min.js')}'></script>
     <script src='file://${path.resolve(`${__dirname}/../`, './js/maptable.percentile.helper.js')}'></script>
+    <link rel="stylesheet" href='file://${path.resolve(`${__dirname}/../`, './data/maptable.css')}'>
   </head>
   <body>
     <style>#mt-map-title { font-size: ${argv.titleSize}; }</style>
     <div id="vizContainer"></div>
     <script>
       const mapData = '${mapData.replace(/'/g, '\\\'').replace(/\n/g, '\\n').replace(/\r/g, '\\r')}';
+      const timezonesData = '${timezonesData.replace(/'/g, '\\\'').replace(/\n/g, '\\n').replace(/\r/g, '\\r')}';
       var ranks = null;
       var negativeRanks = null;
       var countKey = 'value';
@@ -92,6 +96,8 @@ function buildInputHtml(argv) {
                     return out;
                 },
             },
+            ${argv.enableNight ? `night: {${argv.isoTime ? `date: new Date(Date.parse('${argv.isoTime}'))` : ''}},` : ''}
+            ${argv.enableTimezones ? `timezones: {pathData: timezonesData, ${argv.isoTime ? `date: new Date(Date.parse('${argv.isoTime}'))` : ''}},` : ''}
             zoom: false,
             watermark: {
                 src: logoUrl,
@@ -269,6 +275,24 @@ require('yargs')
       type: 'string',
       default: '11px',
       description: 'Title font size',
+    });
+
+    yargs.positional('isoTime', {
+      type: 'string',
+      default: null,
+      description: 'ISO datetime that will be used for the timezone stripes and night layers',
+    });
+
+    yargs.positional('enableTimezones', {
+      type: 'boolean',
+      default: false,
+      description: 'Enable timezones stripes',
+    });
+
+    yargs.positional('enableNight', {
+      type: 'boolean',
+      default: false,
+      description: 'Enable night layer',
     });
 
     yargs.positional('width', {
